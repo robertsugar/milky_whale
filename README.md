@@ -13,13 +13,13 @@ there are many ways to build a Galaxy docker image:
 ###a) roll your own (without dockerfile)
 Ideally your image would be built using a dockerfile, we experiment here with the shell to understand what would be needed
 
-A. Create new docker image
+Step 1. Create new docker image
 
 ```
 sudo docker run -i -t --name=milky_whale ubuntu:14.04 /bin/bash
 ```
 
-B. Install docker (Ubuntu example):
+Step 2. Install docker (Ubuntu example):
 
 ```
 sudo apt-get update
@@ -28,7 +28,7 @@ sudo wget -qO- https://get.docker.com/ | sh
 #sudo apt-get install docker.io
 ```
 
-3. Install Galaxy
+Step 3. Install Galaxy
 
 ```
 sudo apt-get install git
@@ -39,14 +39,14 @@ sudo apt-get install lynx
 git clone https://github.com/galaxyproject/galaxy/
 ```
 
-4. Run Galaxy
+Step 4. Run Galaxy
 
 ```
 cd galaxy/
 sh run.sh
 ```
 
-5. Test Galaxy
+Step 5. Test Galaxy
 
 #on a different shell from host
 
@@ -55,14 +55,14 @@ sudo docker ps
 sudo docker exec my_container_id lynx 127.0.0.1:8080
 ```
 
-6. Commit image
+Step 6. Commit image
 
 ```
 sudo docker commit -m "installed Galaxy" milky_whale milky_whale:v2
 sudo docker stop milky_whale
 ```
 
-7. Test new instance
+Step 7. Test new instance
 #run committed image
 
 ```
