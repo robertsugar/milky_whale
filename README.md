@@ -13,17 +13,21 @@ there are many ways to build a Galaxy docker image:
 ###a) roll your own (without dockerfile)
 Ideally your image would be built using a dockerfile, we experiment here with the shell to understand what would be needed
 
-1. Create new docker image
+A. Create new docker image
+
 ```
 sudo docker run -i -t --name=milky_whale ubuntu:14.04 /bin/bash
 ```
-2. Install docker (Ubuntu example):
+
+B. Install docker (Ubuntu example):
+
 ```
 sudo apt-get update
 sudo wget -qO- https://get.docker.com/ | sh
 #alternatively you can install from package but that tends to be an older version 
 #sudo apt-get install docker.io
 ```
+
 3. Install Galaxy
 
 ```
