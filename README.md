@@ -13,6 +13,18 @@ there are many ways to build a Galaxy docker image:
 ###a) roll your own (without dockerfile)
 Ideally your image would be built using a dockerfile, we experiment here with the shell to understand what would be needed
 
+Step 0. Connect to VM:
+
+Download key file
+
+```
+# with wget or the browser of your choice
+wget https://github.com/robertsugar/milky_whale/blob/master/dock.pem
+#change file permissions so it is only readable to you
+chmod 400 dock.pem
+ssh -i dock.pem ubuntu@my.ip.add.ress
+```
+
 Step 1. Install docker (Ubuntu example):
 
 ```
@@ -20,6 +32,12 @@ sudo apt-get update
 sudo wget -qO- https://get.docker.com/ | sh
 #alternatively you can install from package but that tends to be an older version 
 #sudo apt-get install docker.io
+
+#add user to docker group
+sudo usermod -aG docker ubuntu
+#at this point you might want to reconnect to the instance
+#exit
+#reconnect
 ```
 
 Step 2. Create new docker image
