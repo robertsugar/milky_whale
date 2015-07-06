@@ -94,7 +94,7 @@ sudo apt-get lynx
 lynx 127.0.0.1:8080
 ```
 
-#b) Roll your own (with Dockerfile)
+###b) Roll your own (with Dockerfile)
 
 here we will do something similar as in a) in an automated manner
 
@@ -130,7 +130,7 @@ build docker image from dockerfile
 ```
 sudo docker build -t my_galaxy .
 ```
-#c) start from a pre-canned one
+###c) start from a pre-canned one
 Björn A. Grüning (bjoern.gruening@gmail.com) has kindly assembled a wide variety of Galaxy docker images available at: [https://github.com/bgruening/docker-galaxy-stable](https://github.com/bgruening/docker-galaxy-stable) and [https://github.com/bgruening/docker-recipes/](https://github.com/bgruening/docker-recipes/)
 
 to run:
@@ -141,6 +141,6 @@ docker run -d -p 8080:80 -p 8021:21 bgruening/galaxy-stable
 A good description, and a tutorial could be found on the GitHub page. Also worth looking into the [Dockerfile](https://github.com/bgruening/docker-galaxy-stable/blob/master/galaxy/Dockerfile) on how the docker image was built.
 
 
-#More info: 
-##Cheat sheet
+##More info: 
+###Cheat sheet
 https://github.com/wsargent/docker-cheat-sheet
