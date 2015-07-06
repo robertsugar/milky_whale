@@ -130,6 +130,20 @@ build docker image from dockerfile
 ```
 sudo docker build -t my_galaxy .
 ```
+
+run image (intaractively)
+```
+sudo docker run -it my_galaxy
+```
+
+connect to image from browser through URL: http://127.0.0.1:8080 (locally) or http://host.ip.add.ress:8080 (if you have a routable ip address)
+from a command-line based browser (just to check if it is running)
+```
+sudo apt-get install lynx
+lynx 127.0.0.1:8080
+``` 
+
+
 ###c) start from a pre-canned one
 Björn A. Grüning (bjoern.gruening@gmail.com) has kindly assembled a wide variety of Galaxy docker images available at: [https://github.com/bgruening/docker-galaxy-stable](https://github.com/bgruening/docker-galaxy-stable) and [https://github.com/bgruening/docker-recipes/](https://github.com/bgruening/docker-recipes/)
 
