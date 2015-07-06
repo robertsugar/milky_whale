@@ -63,13 +63,13 @@ sudo docker stop milky_whale
 ```
 
 Step 7. Test new instance
-#run committed image
+run committed image
 
 ```
 sudo docker run -i -t -p 8080 --name=milky2 milky_whale /bin/sh /galaxy/run.sh
 ```
 
-#on a different shell
+on a different shell
 ```
 sudo apt-get lynx
 lynx 127.0.0.1:8080
