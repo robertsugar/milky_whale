@@ -48,7 +48,7 @@ sh run.sh
 
 Step 5. Test Galaxy
 
-#on a different shell from host
+on a different shell from host
 
 ```
 sudo docker ps
