@@ -59,12 +59,6 @@ sudo docker exec my_container_id lynx 127.0.0.1:8080
 
 ```
 sudo docker commit -m "installed Galaxy" milky_whale milky_whale:v2
-```
-
-4. Commit image
-
-```
-sudo docker commit milky_whale milky_whale
 sudo docker stop milky_whale
 ```
 
