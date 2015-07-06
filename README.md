@@ -114,7 +114,9 @@ nano Dockerfile
 ```
 
 Step 1. Define base image 
+
 Step 2. Update packages
+
 Step 3: Add the package verification key
 ```
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
