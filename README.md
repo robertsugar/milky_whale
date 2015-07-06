@@ -84,15 +84,17 @@ Create a new directory my_galaxy
 mkdir my_galaxy
 ```
 
+Download Galaxy (will be added to the docker image)
+```
+git clone https://github.com/galaxyproject/galaxy/
+```
+
 Create Dockerfile
 ```
 nano Dockerfile
 ```
 
-Download Galaxy
-```
-git clone https://github.com/galaxyproject/galaxy/
-```
+A possible solution: [Dockerfile](https://github.com/robertsugar/milky_whale/blob/master/Dockerfile)
 
 build docker image from dockerfile
 ```
