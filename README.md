@@ -15,16 +15,6 @@ Ideally your image would be built using a dockerfile, we experiment here with th
 
 Step 0. Connect to VM:
 
-Download key file
-
-```
-# with wget or the browser of your choice
-wget https://github.com/robertsugar/milky_whale/blob/master/dock.pem
-#change file permissions so it is only readable to you
-chmod 400 dock.pem
-ssh -i dock.pem ubuntu@my.ip.add.ress
-```
-
 Step 1. Install docker (Ubuntu example):
 
 ```
